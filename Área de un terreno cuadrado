@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float lado, area;
+    cout<<"ingrsar el lado del terreno: ";
+    cin>>lado;
+    area=lado*lado;
+    cout<<"El area del terreno es "<<area;
+
+    return 0;
+}
