@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+     int n;
+     cout<<"Ingresar cantidad de años: ";
+     cin>>n;
+     cout<<"La depreciacion acumulada del edificio es: "<<1500000*0.05*n;
+     return 0;
+}
