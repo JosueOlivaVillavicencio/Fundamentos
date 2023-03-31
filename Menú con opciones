@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,edad,i,N,opcion;
+    do {
+    cout<<"\t MENU "<<endl; // \ t es un tabulador
+    cout<<"1.- Estructura secuencial "<<endl;
+    cout<<"2.- Estructura condicional "<<endl;
+    cout<<"3.- Estructura repetitiva "<<endl;
+    cout<<"Elige una opcion  "<<endl;
+    cin>>opcion;
+    switch(opcion){
+        case 1: cout<<"Ingresar cantidad de años: ";
+                cin>>n;
+                cout<<"La depreciacion acumulada del edificio es: "<<1500000*0.05*n<<endl;
+            break;
+        case 2: cout<<"ingrese la edad: ";
+                cin>>edad;
+                if(edad<=18)
+                   cout<<"Es menor de edad: "<<endl;
+                else
+                   cout<<"Es mayor de edad: "<<endl;
+            break;
+        case 3: cout<<"ingrese el numero de veces a repetir: ";
+                cin>>N;
+                cout<<"salida del mientras"<<endl;
+                i=0;
+                while(i<N)
+             {
+                i++;
+                cout<<i<<endl;
+        
+            }
+                cout<<"salida de para"<<endl;
+                 for(int i=0;i<=10;i++)
+                 cout<<i<<endl;
+                 cout<<"salida del repetir"<<endl;
+                 i=0;
+                 do{
+             
+                  } while(i<10);
+                  break;
+        
+    }
+   
+}while(opcion!=0);
+
+
+    return 0;
+}
