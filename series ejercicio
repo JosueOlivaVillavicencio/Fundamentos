@@ -1,0 +1,18 @@
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    
+    int n,suma;
+    cout<<"ingrese hasta que numero multiplicar: ";
+    cin>>n;
+    suma=0;
+    for( int i=1;i<=n; i++)
+       suma=suma+pow(i,2);
+    cout<<"La suma es: "<<suma;
+
+    return 0;
+}
