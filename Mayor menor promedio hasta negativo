@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,con=0,mayor=0,menor;
+    float prom,ac=0;
+    do{
+        ac=ac+num;
+        cout<<"Ingrese el numero: ";
+        cin>>num;
+        if (num>0)
+        {
+           if(con==0){
+               mayor=num;
+               menor=num;
+           }
+           if(num>mayor)
+               mayor=num;
+           if (num<menor)
+               menor=num;
+            con=con+1;
+        }
+        
+    } while (num>0);
+    prom=ac/con;
+    if (con>1){
+        cout<<"El mayor numero es: "<<mayor<<endl;
+        cout<<"El menor numero es: "<<menor<<endl;
+        cout<<"El promedio es: "<<prom;
+    }
+    else 
+    cout<<" ";
+    return 0;
+}
