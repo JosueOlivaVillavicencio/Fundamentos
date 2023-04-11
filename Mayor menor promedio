@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,num,mayor=0,menor;
+    float prom,ac=0;
+    cout<<"ingresar cantidad de enteros: ";
+    cin>>n;
+    for (int i=1;i<=n;i++)
+    {
+        cout<<"Ingresar numero: ";
+        cin>>num;
+        ac=ac+num;
+        if (num>mayor)
+            mayor=num;
+        if (i==1)
+            menor=num;
+        if (num<menor)
+            menor=num;
+    }
+    prom=ac/n;
+    cout<<"El mayor numero es: "<<mayor<<endl;
+    cout<<"El menor numero es: "<<menor<<endl;
+    cout<<"El promedio es: "<<prom;
+    return 0;
+}
