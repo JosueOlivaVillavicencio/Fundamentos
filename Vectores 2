@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+
+void mostrarVector(int a[], int n) {
+    for (int i= 0; i < n; i++)
+        cout << a[i] << " ";
+}
+void cargarVectorB(int b[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << "Cargando el vector b...." << endl;
+        cin >> b[i];
+    }
+}
+void mostrarVectorB(int b[], int n) {
+    for (int i= 0; i < n; i++)
+        cout << b[i] << " ";
+}
+void sumaVectores(int a[], int b[], int n) {
+    cout << endl<< "mostrando la suma del vector A con B: " << endl;
+    for (int i = 0; i < n; i++)
+        cout << a[i] + b[i] << " ";
+}
+int MayorVectorA(int a[], int n) {
+    int mayor = a[0];
+    for (int i = 0; i < n; i++)
+        if (a[i] > mayor)
+            mayor = a[i];
+    return mayor;
+}
+int MenorVectorB(int b[], int n) {
+    int menor = b[0];
+    for (int i = 0; i < n; i++)
+        if (b[i] < menor)
+            menor = b[i];
+    return menor;
+}
+void imprimirParesA(int a[], int n) {
+    cout << "\nImprimiendo pares de A..." << endl;
+    for (int i = 0; i < n; i++)
+        if (a[i] % 2 == 0)
+            cout << a[i] << " ";
+}
+void imprimirImparesB(int b[], int n) {
+    cout << "\nImprimiendo impares de B..." << endl;
+    for (int i = 0; i < n; i++)
+        if (b[i] % 2 != 0)
+            cout << b[i] << " ";
+}
+
+
+int main()
+{
+    int a[] = { 3,6,8,2,9 };
+    int b[5];
+    //mostrarVector(a, 5);
+    cargarVectorB(b, 5);
+    mostrarVectorB(b, 5);
+    sumaVectores(a, b, 5);
+    cout << "\nEl mayor del vector a es: " << MayorVectorA(a, 5) << endl;
+    cout << "El menor del vector b es: " << MenorVectorB(b, 5) << endl;
+    imprimirParesA(a, 5);
+    imprimirImparesB(b, 5);
+}
