@@ -1,0 +1,39 @@
+
+#include <iostream>
+using namespace std;
+
+int sumar2Numeros(int x, int y);
+float sumar3Numeros(float x, float y, float z);
+void sumarNumeros(int x, int y);
+void notasEstudiantes(string materia, int nota, string nombre,bool aprobo );
+int main()
+{
+    //cout << "la suma es: " << sumar2Numeros(10, 30) << endl;
+    //cout << "la suma con decimales es: " << sumar3Numeros(10.34,  30.56 ,  17.90);
+    //sumarNumeros(30, 40);
+
+    notasEstudiantes("Programacion", 70,"Luis Jose", true);
+
+}
+
+int sumar2Numeros(int x, int y) {
+    return x + y;
+}
+float sumar3Numeros(float x, float y, float z) {
+    return x + y + z;
+}
+void sumarNumeros(int x, int y) {
+    int mult = x * y;
+    cout << "La suma es: " << mult;
+
+}
+void notasEstudiantes(string materia, int nota, string nombre, bool aprobo){
+    cout << "El estudiante " << nombre << "tiene una nota de: " << nota << endl;
+    if (aprobo=true ) {
+        cout << "La materia"<<materia<<"fue aprobada con"<<nota<<endl;
+    }
+    else {
+        cout << "La materia" << materia << "fue reprobada con" << nota << endl;
+    }
+}
+
