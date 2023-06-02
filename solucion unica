@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c,d,x;
+    cout<<"Ingresar el valor de a: ";
+    cin>>a;
+    cout<<"Ingresar el valor de b: ";
+    cin>>b;
+    cout<<"Ingresar el valor de c: ";
+    cin>>c;
+    d=b*b-4*a*c;
+    if (a==0)
+        cout<<"No hay solución";
+    else
+    {
+        if (d==0)
+        {
+            x=-b/(2*a);
+            cout<<"La solucion unica es "<<x;
+        }
+        else
+            cout<<"No existe solucion unica";
+    }
+    
+    return 0;
+}
