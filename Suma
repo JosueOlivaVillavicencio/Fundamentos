@@ -1,0 +1,10 @@
+int main()
+{
+  int a,b,r;
+  cout<<"Ingresar valor: ";
+  cin>>a;
+  cout<<"Ingresar valor: ";
+  cin>>b;
+  r=a+b;
+  cout<<"La suma "<<r;
+}
