@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float lado,area;
+    int edad,opcion,n;
+    do {
+    cout<<"\tMENU"<<endl;
+    cout<<"1.Ejercicio Secuencial"<<endl;
+    cout<<"2.Ejercicio Condicional"<<endl;
+    cout<<"3.Ejercicio Repetitiva"<<endl;
+    cout<<"Eliga la opcion: ";
+    cin>>opcion;
+        switch (opcion) {
+            case 1: cout<<"ingrsar el lado del terreno: ";
+                cin>>lado;
+                area=lado*lado;
+                cout<<"El area del terreno es "<<area<<endl;
+                break;
+               
+            case 2: cout<<"Ingrese la edad: ";
+                cin>>edad;
+                if (edad>=18)
+                    cout<<"Es mayor de edad"<<endl;
+                else
+                    cout<<"Es menor de edad"<<endl;
+                break;
+            case 3: cout<<"Ingresar la cantidad de veces a repetir: ";
+                cin>>n;
+                for (int i=1;i<=n;i++)
+                    cout<<i<<endl;
+                break;
+            case 0: cout<<"Salir"<<endl;
+                break;
+            default: cout<<"Opcion invalida";
+        }
+    } while (opcion!=0);
+    return 0;
+}
